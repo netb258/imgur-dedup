@@ -1,6 +1,8 @@
 # imgur-dedup
 This program goes through an imgur album and finds all duplicate images.
 
+Perceptual hashing is used to compare the images.
+
 # Prerequisites
 
 You will need an imgur client id (see https://apidocs.imgur.com).
