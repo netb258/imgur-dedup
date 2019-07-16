@@ -1,6 +1,8 @@
 # imgur-dedup
 This program goes through an imgur album and finds all duplicate images.
 
+The results are saved in an HTML report.
+
 Perceptual hashing is used to compare the images.
 
 # Prerequisites
