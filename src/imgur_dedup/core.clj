@@ -61,7 +61,7 @@
     (try-n-times #(client/get url (assoc options :socket-timeout 3000 :conn-timeout 3000)) 5)))
 
 (defn get-all-images
-  "Pretty much self explanatory. Will return a seq of links and promises for their streams.
+  "Pretty much self explanatory. Will return a seq of links and their streams.
   Note, that we will ignore all cookies for each request."
   [img-links]
   (for [link img-links]
