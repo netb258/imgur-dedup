@@ -53,7 +53,7 @@
         (try-n-times f (dec n))))))
 
 (defn make-get
-  "Makes and HTTP get request and returns a promise for the response.
+  "Makes and HTTP get request in a new thread.
   Note, that this function will retry the request five times before giving up with an Exception.
   Also there is a timeout of three seconds, after which an exception is thrown."
   [url options]
