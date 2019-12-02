@@ -82,10 +82,10 @@
           other-hash-pairs)))
 
 (defn make-phash-map
-  "Given a list of links, this function returns a map with the links as keys and their phashes as values."
+  "Given a list of links and image streams, this function returns a map with the links as keys and their phashes as values."
   [img-links]
   (into {} ;; Transform the seq from the next expression into a Clojure map.
-        (map-indexed ;; This will transform the seq of links and img-streams (promises) from get-all-images, INTO a seq of links and phashes.
+        (map-indexed ;; This will transform the seq of links and img-streams from get-all-images, INTO a seq of links and phashes.
           (fn [idx pair]
             [(first pair)
              (try
